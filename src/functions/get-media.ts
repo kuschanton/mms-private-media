@@ -1,6 +1,4 @@
-// Imports global types
 import '@twilio-labs/serverless-runtime-types'
-// Fetches specific types
 import {
   Context,
   ServerlessCallback,
@@ -25,17 +23,12 @@ export const handler: ServerlessFunctionSignature<S3Context, Event> = async func
   event: Event,
   callback: ServerlessCallback,
 ) {
-
-  console.log(event.key)
-
   const s3Client = new S3Client({region: context.REGION})
 
   let response = await s3Client.send(new GetObjectCommand({Bucket: context.BUCKET, Key: event.key}))
 
   const buffer = await streamToBuffer(response.Body!!)
-  console.log(buffer)
   const size = response.ContentLength
-  console.log(size)
 
   const twilioResponse = new Twilio.Response()
   twilioResponse.setBody(buffer)
@@ -46,12 +39,9 @@ export const handler: ServerlessFunctionSignature<S3Context, Event> = async func
 
 const streamToBuffer = (stream: Readable | ReadableStream | Blob): Promise<Buffer> =>
   new Promise((resolve, reject) => {
-    // @ts-ignore
-    const chunks = []
-    // @ts-ignore
-    stream.on('data', (chunk) => chunks.push(chunk))
-    // @ts-ignore
-    stream.on('error', reject)
-    // @ts-ignore
-    stream.on('end', () => resolve(Buffer.concat(chunks)))
+    let readable = stream as Readable
+    const chunks: any[] = []
+    readable.on('data', (chunk) => chunks.push(chunk))
+    readable.on('error', reject)
+    readable.on('end', () => resolve(Buffer.concat(chunks)))
   })
