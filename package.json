@@ -14,7 +14,7 @@
   "dependencies": {
     "@twilio-labs/serverless-runtime-types": "^1.1",
     "twilio": "^3.56",
-    "@aws-sdk/client-s3": "^3.42.0",
+    "@aws-sdk/client-s3": "^3.42.0"
   },
   "devDependencies": {
     "twilio-run": "^2.9.0",
