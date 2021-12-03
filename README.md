@@ -16,7 +16,7 @@ Does that mean that you can't send multimedia messages to your customers?
 Absolutely not!
 This project shows how you can protect your media attachments while still being able to use them in multimedia messaging using protected serverless Twilio Functions.
 
-For more details on the project head to the blogpost [here.](https://<TBD>)
+For more details on the project head to the blogpost [here.](https://www.twilio.com/blog/tag/functions)
 
 ## Developer environment setup
 Make sure you have the software you need:
@@ -41,7 +41,7 @@ REGION=<AWS region you created your bucket in>
 `npm run deploy` - deploys project to Twilio Functions using credentials from .env file
 
 ## Tutorial
-The blogpost with tutorial for this project you will find [here.](https://<TBD>)
+The blogpost with tutorial for this project you will find [here.](https://www.twilio.com/blog/tag/functions)
 
 ## Disclaimer
 The project published as-is as sample code.
