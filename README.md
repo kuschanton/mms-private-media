@@ -18,6 +18,10 @@ This project shows how you can protect your media attachments while still being 
 
 For more details on the project head to the blogpost [here.](https://www.twilio.com/blog/tag/functions)
 
+## Diagram
+
+![Diagram](./docs/assets/diagram.png)
+
 ## Developer environment setup
 Make sure you have the software you need:
 
