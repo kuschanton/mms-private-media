@@ -16,7 +16,7 @@ Does that mean that you can't send multimedia messages to your customers?
 Absolutely not!
 This project shows how you can protect your media attachments while still being able to use them in multimedia messaging using protected serverless Twilio Functions.
 
-For more details on the project head to the blogpost [here.](https://www.twilio.com/blog/tag/functions)
+For more details on the project head to the blogpost [here.](https://www.twilio.com/blog/secure-media-messaging-attachments-protected-twilio-functions)
 
 ## Diagram
 
