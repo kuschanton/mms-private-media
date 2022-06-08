@@ -45,7 +45,7 @@ REGION=<AWS region you created your bucket in>
 `npm run deploy` - deploys project to Twilio Functions using credentials from .env file
 
 ## Tutorial
-The blogpost with tutorial for this project you will find [here.](https://www.twilio.com/blog/tag/functions)
+The blogpost with tutorial for this project you will find [here.](https://www.twilio.com/blog/secure-media-messaging-attachments-protected-twilio-functions)
 
 ## Disclaimer
 The project published as-is as sample code.
